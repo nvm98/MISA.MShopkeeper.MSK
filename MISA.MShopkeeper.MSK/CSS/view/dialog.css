@@ -1,0 +1,261 @@
+﻿.ui-dialog-titlebar-close {
+    display: none;
+}
+
+.icon-resize, .icon-close {
+    display: block;
+    height: 32px;
+    width: 32px;
+    position: absolute;
+    top: 0;
+}
+
+    .icon-resize:hover, .icon-close:hover {
+        cursor: pointer;
+    }
+
+.icon-resize {
+    right: 32px;
+    background-image: url('/Content/icons/Maximize.png');
+    background-repeat: no-repeat;
+    background-position: 20px 11px;
+}
+
+.icon-close {
+    right: 0px;
+    background: url(/Content/icons/common-icon.png) no-repeat -1119px -119px;
+}
+
+.ui-dialog {
+    padding: 0;
+}
+
+/*button trong dialog cảnh báo*/
+.glyphicon, .text-button {
+    display: block;
+    width: 16px;
+    height: 16px;
+    float: left;
+    font-weight: 600;
+    padding: 0 8px;
+}
+
+.ui-dialog-buttonset button {
+    border: 1px solid #fff;
+    border-radius: 3px;
+    padding: 0 8px;
+}
+
+.glyphicon-save {
+    background: url('/Content/icons/save-white.png') no-repeat 4px 4px;
+}
+
+.glyphicon-noSave {
+    background: url('/Content/icons/not-save.png') no-repeat 3px 1px;
+}
+
+.glyphicon-cancel {
+    background: url('/Content/icons/cancel-blue.png') no-repeat 3px 4px;
+}
+
+.glyphicon-delete {
+    background: url('/Content/icons/common-icon.png') no-repeat -1076px -127px;
+}
+
+.ui-dialog-buttonset .btn-save {
+    height: 32px;
+    width: 75px;
+    color: #fff;
+    background-color: #026b97;
+}
+
+.ui-dialog-buttonset .btn-agree {
+    height: 32px;
+    width: 75px;
+    color: #fff;
+    background-color: #026b97;
+}
+
+.ui-dialog-buttonset .btn-cancel {
+    height: 32px;
+    width: 83px;
+    color: #026b97;
+    background-color: #fff;
+}
+
+.ui-dialog-buttonset .btn-delete {
+    height: 32px;
+    width: 75px;
+    color: #fff;
+    background-color: #fb8080;
+}
+
+.ui-dialog-buttonset .btn-noSave {
+    height: 32px;
+    width: 104px;
+    color: #026b97;
+    background-color: #fff;
+    border: 1px solid #026b97;
+}
+
+.ui-dialog-buttonset .btn-agree .text-button, .ui-dialog-buttonset .btn-save .text-button, .ui-dialog-buttonset .btn-delete .text-button {
+    color: #fff;
+}
+
+.ui-dialog-buttonset .btn-noSave .text-button, .ui-dialog-buttonset .btn-cancel .text-button {
+    color: #026b97;
+}
+
+.ui-dialog-buttonset .btn-cancel:hover {
+    border: 1px solid #026b97;
+}
+
+.save + .ui-dialog-buttonpane .btn-delete, .save + .ui-dialog-buttonpane .btn-agree, .delete + .ui-dialog-buttonpane .btn-agree, .delete + .ui-dialog-buttonpane .btn-save, .delete + .ui-dialog-buttonpane .btn-noSave, .error + .ui-dialog-buttonpane .btn-delete, .error + .ui-dialog-buttonpane .btn-noSave, .error + .ui-dialog-buttonpane .btn-save, .error + .ui-dialog-buttonpane .btn-cancel {
+    display: none;
+}
+
+[aria-describedby="dialog-warn"] .icon-resize {
+    display: none;
+}
+
+#dialog-warn span {
+    float: left;
+    display: block;
+}
+
+.icon-alert {
+    width: 44px;
+    height: 44px;
+}
+
+.text-alert {
+    padding-top: 12px;
+    padding-left: 8px;
+}
+
+#dialog-warn {
+    padding: 0;
+    height: 55px !important;
+}
+
+.save .icon-alert, .delete .icon-alert {
+    background: url('/Content/icons/icon-popup.png') -165px 0px;
+}
+
+.error .icon-alert {
+    background: url('/Content/icons/icon-popup.png') no-repeat -56px 0px;
+}
+
+.context-alert {
+    height: 55px;
+    width: 100%;
+    padding: .5em 1em;
+}
+/*css cho dialog chính*/
+#dialog-main {
+    padding: 0;
+}
+
+.content-dialog-main {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 32px auto;
+}
+
+    .content-dialog-main .body-dialog {
+        padding: 0 8px;
+    }
+/*css cho thanh header trên dialog*/
+.header-dialog {
+    background-color: #026b97;
+}
+
+    .header-dialog span, .header-dialog .seperate {
+        float: left;
+    }
+
+    .header-dialog .seperate {
+        height: 32px;
+        width: 1px;
+        border-right: 1px solid #1882ae;
+    }
+
+    .header-dialog a {
+        float: left;
+        padding: 0 8px;
+        color: #fff;
+    }
+
+    .header-dialog .icon {
+        display: block;
+        height: 32px;
+        line-height: 32px;
+        width: 16px;
+    }
+
+    .header-dialog .icon-header {
+        background-image: url('/Content/icons/common-icon.png');
+        background-repeat: no-repeat;
+    }
+
+    .header-dialog .icon-prev {
+        background-position: -475px -119px;
+    }
+
+    .header-dialog .icon-next {
+        background-position: -425px -119px;
+    }
+
+    .header-dialog .icon-add {
+        background-position: -1px -119px;
+    }
+
+    .header-dialog .icon-edit {
+        background-position: -77px -194px;
+    }
+
+    .header-dialog .icon-save {
+        background-position: -325px -119px;
+    }
+
+    .header-dialog .icon-delete {
+        background-position: -1076px -119px;
+    }
+
+    .header-dialog .icon-stop {
+        background-position: -1401px -119px;
+    }
+
+    .header-dialog .icon-print {
+        background-position: -227px -119px;
+    }
+
+    .header-dialog .icon-help {
+        background-position: -176px -194px;
+    }
+
+    .header-dialog .icon-header-close {
+        background-position: -275px -119px;
+    }
+
+    .header-dialog .text-header {
+        padding: 6px 8px;
+    }
+    /*css cho dialog thêm*/
+.add .item-prev, .add .item-next, .add .item-add, .add .item-edit, .add .item-delete, .add .item-stop, .add .item-print {
+    opacity: 0.5;
+    pointer-events: none;
+}
+.duplicate .item-prev, .duplicate .item-next, .duplicate .item-add, .duplicate .item-edit, .duplicate .item-delete, .duplicate .item-stop, .duplicate .item-print {
+    opacity: 0.5;
+    pointer-events: none;
+}
+.view .item-stop, .view .item-save, .view .item-prev {
+    opacity: 0.5;
+    pointer-events: none;
+}
+.edit .item-prev, .edit .item-next, .edit .item-add, .edit .item-edit, .edit .item-delete, .edit .item-print {
+    opacity: 0.5;
+    pointer-events: none;
+}

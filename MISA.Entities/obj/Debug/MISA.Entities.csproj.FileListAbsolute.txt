@@ -1,0 +1,5 @@
+D:\dev\MISA.MShopkeeper.MSK\MISA.Entities\bin\Debug\MISA.Entities.dll
+D:\dev\MISA.MShopkeeper.MSK\MISA.Entities\bin\Debug\MISA.Entities.pdb
+D:\dev\MISA.MShopkeeper.MSK\MISA.Entities\obj\Debug\MISA.Entities.csproj.CoreCompileInputs.cache
+D:\dev\MISA.MShopkeeper.MSK\MISA.Entities\obj\Debug\MISA.Entities.dll
+D:\dev\MISA.MShopkeeper.MSK\MISA.Entities\obj\Debug\MISA.Entities.pdb

@@ -1,0 +1,61 @@
+﻿.menu-icon {
+    margin:auto;
+    height: 38px;
+    width: 22px;
+    background-image: url('../../Content/icons/slibarmenu.png');
+    background-repeat: no-repeat;
+}
+.menu-general {
+    background-position: 0 6px;
+}
+.menu-report {
+    background-position: 0 -273px;
+}
+.menu-buy {
+    background-position: 0 -33px;
+}
+.menu-warehouse {
+    background-position: 0 -75px;
+}
+.menu-refund {
+    background-position: 0 -115px;
+}
+.menu-cost {
+    background-position: -2px -154px;
+}
+.menu-promotion {
+    background-position: 0 -193px;
+}
+.menu-category {
+    background-position: 0 -233px;
+}
+.menu-setting {
+    background-position: 0 -313px;
+}
+.menu-product {
+    background-position: 0 -350px;
+}
+.mshopkeeper-menu .menu-item{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    height: 70px;
+}
+.mshopkeeper-menu .menu-item:hover {
+    display: block;
+}
+.mshopkeeper-menu {
+    background-color: #026b97;
+    height: 100%;
+}
+.mshopkeeper-menu span{
+    display:block;
+    text-align: center;
+}
+.menu-top{
+    max-height: calc(100% - 70px);
+    overflow: auto;
+}
+.wrap-menu-top{
+    height: 100%;
+}

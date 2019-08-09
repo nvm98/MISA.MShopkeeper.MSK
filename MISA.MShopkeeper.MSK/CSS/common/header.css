@@ -1,0 +1,72 @@
+﻿.mshopkeeper-logo {
+    background-image: url(/Content/icons/logo-mshopkeeper.png);
+    background-position: 30px 10px;
+    background-repeat: no-repeat;
+    background-color: #006189;
+    background-size: 161px;
+}
+
+.mshopkeeper-header {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 8px;
+}
+
+.header-left {
+}
+
+.header-right {
+}
+
+.icon-help {
+    background: url('/Content/icons/icon_help_18.png') no-repeat;
+}
+
+.header-left .icon-help {
+    display: block;
+    width: 24px;
+    height: 24px;
+}
+
+.header-left div, .header-left a, .header-left span {
+    float: left;
+}
+
+.header-left div {
+    font-weight: 500;
+    font-size: 18px;
+    padding: 8px;
+    margin-right: 20px;
+}
+
+.header-left a {
+    margin-top: 12px;
+    font-weight: 600;
+    color: #026b97;
+}
+
+.header-right .item-mshopkeeper-header {
+    float: right;
+}
+.header-right .icon-down {
+    background: url('../../Content/icons/arrow-down-line.png') no-repeat center;
+}
+.header-right .icon-logo {
+    border-radius: 16px;
+    background: url("https://misard.mshopkeeper.vn/backendg2/api/Image?id=&type=0&w=50&h=50&CompanyCode=misard") no-repeat center;
+}
+.header-right .icon{
+    display: block;
+    width: 32px;
+    height: 32px;
+}
+.header-right span {
+    font-weight: 600;
+    float: left;
+}
+.header-right .text-header{
+    padding: 8px;
+}
+.header-right{
+    padding: 4px;
+}

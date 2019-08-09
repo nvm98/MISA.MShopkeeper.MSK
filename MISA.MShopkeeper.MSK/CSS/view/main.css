@@ -1,0 +1,82 @@
+﻿/*phần thanh phân trang*/
+.content-grid-paging{
+    padding: 14px 8px;
+    border-bottom: 1px solid #d0d0d0;
+}
+    .content-grid-paging .paging-left {
+        display: block;
+        float: left;
+    }
+    .content-grid-paging .paging-right{
+        float: right;
+        display:block;
+    }
+    .content-grid-paging .icon-paging {
+        width: 24px;
+        height: 24px;
+        background-image: url('/Content/icons/common-icon.png');
+        background-repeat: no-repeat;
+        cursor: pointer;
+        border-radius: 3px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: rgb(36, 123, 160);
+        display: block;
+        margin: 0 4px;
+    }
+    .content-grid-paging .icon-backward {
+        background-position: -648px -123px;
+    }
+    .content-grid-paging .icon-prev {
+        background-position: -699px -123px;
+    }
+    .content-grid-paging .icon-next {
+        background-position: -748px -123px;
+    }
+    .content-grid-paging .icon-forward {
+        background-position: -797px -123px;
+    }
+    .content-grid-paging .icon-refresh {
+        background-position: -848px -123px;
+    }
+    .content-grid-paging input{
+        height: 22px;
+        width: 48px;
+        outline: none;
+        text-align: center;
+        font-weight: 600;
+        border: none;
+    }
+    .content-grid-paging select {
+        height: 24px;
+        width: 48px;
+        font-weight: 600;
+        border-radius: 3px;
+    }
+.content-grid-paging div.paging-left{
+    border: 1px solid #d0d0d0;
+    border-radius: 3px;
+}
+    .content-grid-paging .paging-text{
+        padding : 4px 8px;
+    }
+
+    /*Phần bảng chi tiết*/
+.content-grid-detail{
+    display: grid;
+    grid-template-rows:38px auto;
+    grid-row-gap: 4px;
+}
+    .content-grid-detail .detail-text {
+        font-weight: 600;
+        color: #026b97;
+        height: 36px;
+        width: 70px;
+        padding: 0 16px;
+        line-height: 38px;
+        border-bottom: 2px solid #026b97;
+    }
+    .content-grid-detail .label-detail {
+        background-color: #f6f6f6;
+    }
+.dialog-main .

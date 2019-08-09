@@ -1,0 +1,48 @@
+﻿.content-toolbar {
+    background-color: #006189;
+}
+.content-toolbar .item-toolbar{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    display:block;
+    float:left;
+    margin: 2px 8px;
+    padding: 8px;
+}
+    .content-toolbar .icon-toolbar {
+        display: block;
+        margin-right: 8px;
+        width: 16px;
+        height: 16px;
+        background-image: url('../../Content/icons/common-icon.png');
+        background-repeat: no-repeat;
+    }
+    .content-toolbar .seperate {
+        float: left;
+        height: calc(100% - 4px);
+        margin: 2px 0;
+        width: 1px;
+        border-right:1px solid #1882ae;
+    }
+.content-toolbar span{
+    float: left;
+}
+    .content-toolbar .icon-add {
+        background-position: -150px -203px;
+    }
+    .content-toolbar .icon-duplicate {
+        background-position: -976px -127px;
+    }
+    .content-toolbar .icon-view {
+        background-position: -1602px -127px;
+    }
+    .content-toolbar .icon-edit {
+        background-position: -77px -203px;
+    }
+    .content-toolbar .icon-delete {
+        background-position: -1076px -127px;
+    }
+    .content-toolbar .icon-refresh {
+        background-position: -876px -127px;
+    }

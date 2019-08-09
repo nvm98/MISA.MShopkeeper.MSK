@@ -1,0 +1,263 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Home</title>
+    <link href="/CSS/lib/bootstrap.min.css" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/ico" href="https://devmisatest.mshopkeeper.vn/favicon.ico" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="/CSS/lib/datepicker.css" rel="stylesheet" />
+    <link href="/CSS/lib/jquery-ui.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link href="/CSS/common/layout.css" rel="stylesheet" />
+    <link href="/CSS/common/header.css" rel="stylesheet" />
+    <link href="/CSS/common/menu.css" rel="stylesheet" />
+    <link href="/CSS/common/toolbar.css" rel="stylesheet" />
+    <link href="/CSS/common/panel.css" rel="stylesheet" />
+    <link href="../CSS/view/main.css" rel="stylesheet" />
+    <link href="../CSS/view/dialog.css" rel="stylesheet" />
+    <script src="/Script/lib/fd2dcc6d62.js"></script>
+</head>
+<body>
+    <div class="body-container">
+        <div class="item mshopkeeper-logo"></div>
+        <div class="item mshopkeeper-header">
+            <div class="item-mshopkeeper-header header-left">
+                <div>Nhập kho</div>
+                <a href="#">
+                    <span class="icon-help"></span>
+                    <span>Trợ giúp</span>
+                </a>
+            </div>
+            <div class="item-mshopkeeper-header header-right">
+                <div class="item-mshopkeeper-header">
+                    <span class="icon icon-logo"></span>
+                    <span class="text-header">Nguyễn Văn Mạnh</span>
+                    <span class="icon icon-down"></span>
+                </div>
+                <div class="item-mshopkeeper-header">
+                    <span class="text-header">Tất cả các chi nhánh</span>
+                    <span class="icon icon-down"></span>
+                </div>
+            </div>
+        </div>
+        <div class="item mshopkeeper-menu">
+            <div class="menu-top">
+                <div class="wrap-menu-top">
+                    <a href="#" class="menu-item">
+                        <span class="menu-icon menu-general"></span>
+                        <span class="link-text">Tổng quan</span>
+                    </a>
+                    <a href="#" class="menu-item">
+                        <span class="menu-icon menu-buy"></span>
+                        <span class="link-text">Mua hàng</span>
+                    </a>
+                    <a href="#" class="menu-item">
+                        <span class="menu-icon menu-warehouse"></span>
+                        <span class="link-text">Kho</span>
+                    </a>
+                    <a href="#" class="menu-item" id="menu-fund">
+                        <span class="menu-icon menu-refund"></span>
+                        <span class="link-text">Quỹ tiền</span>
+                    </a>
+                    <a href="#" class="menu-item">
+                        <span class="menu-icon menu-cost"></span>
+                        <span class="link-text">Chi phí</span>
+                    </a>
+                    <a href="#" class="menu-item">
+                        <span class="menu-icon menu-promotion"></span>
+                        <span class="link-text">Khuyến mại</span>
+                    </a>
+                    <a href="#" class="menu-item">
+                        <span class="menu-icon menu-category"></span>
+                        <span class="link-text">Danh mục</span>
+                    </a>
+                    <a href="#" class="menu-item">
+                        <span class="menu-icon menu-report"></span>
+                        <span class="link-text">Báo cáo</span>
+                    </a>
+                    <a href="#" class="menu-item">
+                        <span class="menu-icon menu-setting"></span>
+                        <span class="link-text">Thiết lập</span>
+                    </a>
+                </div>
+            </div>
+            <div class="menu-bottom">
+                <a href="#" class="menu-item" style="margin:0">
+                    <span class="menu-icon menu-product"></span>
+                    <span class="link-text">Hàng hóa</span>
+                </a>
+            </div>
+        </div>
+        <div class="item mshopkeeper-main">
+            <div class="item mshopkeeper-content">
+                <div class="item-mshopkeeper-content content-toolbar">
+                    <a href="#" class="item-toolbar item-add">
+                        <span class="icon-toolbar icon-add"></span>
+                        <span>Thêm mới</span>
+                        <i class="fas fa-sort-down" style="margin-left: 8px;"></i>
+                    </a>
+                    <div class="seperate"></div>
+                    <a href="#" class="item-toolbar item-duplicate">
+                        <span class="icon-toolbar icon-duplicate"></span>
+                        <span>Nhân bản</span>
+                    </a>
+                    <div class="seperate"></div>
+                    <a href="#" class="item-toolbar item-view">
+                        <span class="icon-toolbar icon-view"></span>
+                        <span>Xem</span>
+                    </a>
+                    <div class="seperate"></div>
+                    <a href="#" class="item-toolbar item-edit">
+                        <span class="icon-toolbar icon-edit"></span>
+                        <span>Sửa</span>
+                    </a>
+                    <div class="seperate"></div>
+                    <a href="#" class="item-toolbar item-delete">
+                        <span class="icon-toolbar icon-delete"></span>
+                        <span>Xóa</span>
+                    </a>
+                    <div class="seperate"></div>
+                    <a href="#" class="item-toolbar item-refresh">
+                        <span class="icon-toolbar icon-refresh"></span>
+                        <span>Nạp</span>
+                    </a>
+                </div>
+                <div class="item-mshopkeeper-content content-panel">
+                    <div class="item-content-panel select-range-time">
+                        <input type="text" name="name" value="" />
+                        <span class="icon icon-down"></span>
+                    </div>
+                    <div class="item-content-panel select-date">
+                        <div class="select-start-date">
+                            <span class="panel-text">Từ ngày</span>
+                            <div>
+                                <input type="text" name="name" value="" class="panel-start-date" />
+                                <span class="icon icon-calender"></span>
+                            </div>
+                        </div>
+                        <div class="select-end-date">
+                            <span class="panel-text">Đến ngày</span>
+                            <div>
+                                <input type="text" name="name" value="" class="panel-end-date" />
+                                <span class="icon icon-calender"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="item-content-panel btn-filter">
+                        <span class="icon-filter"></span>
+                        <span class="panel-text">Lấy dữ liệu</span>
+                    </a>
+                </div>
+                <div class="item-mshopkeeper-content content-grid">
+                    <div class="item-content-grid content-grid-header">
+
+                    </div>
+                    <div class="item-content-grid content-grid-body">
+
+                    </div>
+                    <div class="item-content-grid content-grid-footer">
+
+                    </div>
+                    <div class="item-content-grid content-grid-paging">
+                        <a href="#" class="icon-paging paging-left icon-backward"></a>
+                        <a href="#" class="icon-paging paging-left icon-prev"></a>
+                        <span class="paging-left paging-text">Trang</span>
+                        <div class="paging-left"><input type="text" name="name" value="1" /></div>
+                        <span class="paging-left paging-text">trên 1</span>
+                        <a href="#" class="icon-paging paging-left icon-next"></a>
+                        <a href="#" class="icon-paging paging-left icon-forward"></a>
+                        <a href="#" class="icon-paging paging-left icon-refresh"></a>
+                        <select class="paging-left">
+                            <option value="15">15</option>
+                            <option value="25">25</option>
+                            <option value="50" selected>50</option>
+                            <option value="100">100</option>
+                        </select>
+                        <span class="paging-right paging-text">Hiển thị <span>1</span> - <span>3</span> trên <span>3</span> kết quả. </span>
+                    </div>
+                </div>
+                <div class="item-mshopkeeper-content content-grid-detail">
+                    <div class="item-grid-detail label-detail">
+                        <div class="detail-text">Chi tiết</div>
+                    </div>
+                    <div class="item-grid-detail table-detail">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="dialog-main" class="dialog-main" title="Thêm phiếu thu">
+        <div class="content-dialog-main">
+            <div class="item-content-dialog header-dialog">
+                <a href="#" class="item-prev">
+                    <span class="icon icon-header icon-prev"></span>
+                    <span class="text-header">Trước</span>
+                    <span class="icon icon-down"></span>
+                </a>
+                <a href="#" class="item-next">
+                    <span class="text-header">Sau</span>
+                    <span class="icon icon-header icon-next"></span>
+                    <span class="icon icon-down"></span>
+                </a>
+                <div class="seperate"></div>
+                <a href="#" class="item-add">
+                    <span class="icon icon-header icon-add"></span>
+                    <span class="text-header">Thêm mới</span>
+                </a>
+                <a href="#" class="item-edit">
+                    <span class="icon icon-header icon-edit"></span>
+                    <span class="text-header">Sửa</span>
+                </a>
+                <a href="#" class="item-save">
+                    <span class="icon icon-header icon-save"></span>
+                    <span class="text-header">Lưu</span>
+                </a>
+                <a href="#" class="item-delete">
+                    <span class="icon icon-header icon-delete"></span>
+                    <span class="text-header">Xóa</span>
+                </a>
+                <a href="#" class="item-stop">
+                    <span class="icon icon-header icon-stop"></span>
+                    <span class="text-header">Hoãn</span>
+                </a>
+                <div class="seperate"></div>
+                <a href="#" class="item-print">
+                    <span class="icon icon-header icon-print"></span>
+                    <span class="text-header">In</span>
+                    <span class="icon icon-down"></span>
+                </a>
+                <div class="seperate"></div>
+                <a href="#" class="item-help">
+                    <span class="icon icon-header icon-help"></span>
+                    <span class="text-header">Trợ giúp</span>
+                </a>
+                <a href="#" class="item-close">
+                    <span class="icon icon-header icon-header-close"></span>
+                    <span class="text-header">Đóng</span>
+                </a>
+            </div>
+            <div class="item-content-dialog body-dialog">
+
+            </div>
+        </div>
+    </div>
+    <div id="dialog-warn">
+        <div class="context-alert">
+            <span class="icon-alert"></span>
+            <span class="text-alert"></span>
+        </div>
+    </div>
+    <script src="/Script/lib/jquery-3.4.1.min.js"></script>
+    <script src="/Script/lib/jquery-ui.js"></script>
+    <script src="/Script/lib/popper.min.js"></script>
+    <script src="/Script/lib/bootstrap.min.js"></script>
+    <script src="/Script/lib/jquery.maskedinput.min.js"></script>
+    <script src="/Script/common/resource.js"></script>
+    <script src="/Script/common/button.js"></script>
+    <script src="/Script/service.js"></script>
+    <script src="/Script/view/baseDilaog.js"></script>
+    <script src="/Script/view/main.js"></script>
+</body>
+</html>

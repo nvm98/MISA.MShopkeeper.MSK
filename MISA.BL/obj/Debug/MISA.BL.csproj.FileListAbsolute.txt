@@ -1,0 +1,5 @@
+D:\dev\MISA.MShopkeeper.MSK\MISA.BL\bin\Debug\MISA.BL.dll
+D:\dev\MISA.MShopkeeper.MSK\MISA.BL\bin\Debug\MISA.BL.pdb
+D:\dev\MISA.MShopkeeper.MSK\MISA.BL\obj\Debug\MISA.BL.csproj.CoreCompileInputs.cache
+D:\dev\MISA.MShopkeeper.MSK\MISA.BL\obj\Debug\MISA.BL.dll
+D:\dev\MISA.MShopkeeper.MSK\MISA.BL\obj\Debug\MISA.BL.pdb
