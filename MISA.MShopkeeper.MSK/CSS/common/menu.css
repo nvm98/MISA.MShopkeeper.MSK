@@ -1,61 +1,77 @@
 ﻿.menu-icon {
-    margin:auto;
-    height: 38px;
+    height: 30px;
     width: 22px;
     background-image: url('../../Content/icons/slibarmenu.png');
     background-repeat: no-repeat;
 }
 .menu-general {
-    background-position: 0 6px;
+    background-position: -1px 3px;
+}
+.menu-note {
+    background: url('/Content/icons/ic_sogiaohang.png') no-repeat 3px 6px;
+}
+.menu-sms {
+    background: url('/Content/icons/sms_menu.svg') no-repeat center 7px;
+}
+.menu-bill {
+    background: url('/Content/icons/Logo_meInvoice.svg') no-repeat center 6px;
+}
+.menu-help {
+    background: url('/Content/icons/slibarmenu.png') no-repeat -1px -384px;
+}
+.menu-phone {
+    background: url('/Content/icons/slibarmenu.png') no-repeat -1px -420px;
+}
+.menu-ocm {
+    background: url('/Content/icons/ic_ocm_logo.png') no-repeat 3px 8px;
+}
+.menu-5shop {
+    background: url('/Content/icons/icon_5shop_white_24_1.png') no-repeat -1px 4px;
+}
+.menu-api {
+    background: url('/Content/icons/ic_api_20.svg') no-repeat 1px 8px;
 }
 .menu-report {
-    background-position: 0 -273px;
+    background-position: -1px -275px;
 }
 .menu-buy {
-    background-position: 0 -33px;
+    background-position: -2px -35px;
 }
 .menu-warehouse {
-    background-position: 0 -75px;
+    background-position: -1px -77px;
 }
 .menu-refund {
-    background-position: 0 -115px;
+    background-position: -1px -117px;
 }
 .menu-cost {
-    background-position: -2px -154px;
+    background-position: -3px -156px;
 }
 .menu-promotion {
-    background-position: 0 -193px;
+    background-position: -1px -196px;
 }
 .menu-category {
-    background-position: 0 -233px;
+    background-position: -1px -234px;
 }
 .menu-setting {
-    background-position: 0 -313px;
+    background-position: -1px -315px;
 }
-.menu-product {
-    background-position: 0 -350px;
-}
-.mshopkeeper-menu .menu-item{
+.mshopkeeper-menu .menu-item {
     display: block;
-    color: #fff;
-    text-decoration: none;
-    height: 70px;
+    height: calc(100% /17);
+    width: 100%;
+    padding: 8px;
 }
-.mshopkeeper-menu .menu-item:hover {
-    display: block;
-}
+    .mshopkeeper-menu .menu-item:hover {
+        background-color: #00577b;
+    }
 .mshopkeeper-menu {
     background-color: #026b97;
-    height: 100%;
 }
 .mshopkeeper-menu span{
-    display:block;
-    text-align: center;
+    color: #fff;
+    display: block;
+    float: left;
 }
-.menu-top{
-    max-height: calc(100% - 70px);
-    overflow: auto;
-}
-.wrap-menu-top{
-    height: 100%;
+.mshopkeeper-menu .link-text{
+    padding: 4px;
 }

@@ -10,7 +10,10 @@ namespace MISA.Common
     {
         public enum Type
         {
-
+            Supplier = 1,
+            Shipper = 2,
+            Customer = 3,
+            Employee = 4
         }
     }
 }

@@ -28,6 +28,7 @@
         text-indent: 8px;
         border-radius: 3px;
         width:90px;
+        margin-top: 2px;
     }
 .select-range-time, .select-start-date div, .select-end-date div{
     border: 1px solid #d0d0d0;

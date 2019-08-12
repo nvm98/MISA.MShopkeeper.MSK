@@ -1,0 +1,168 @@
+﻿/*css cho grid master*/
+.content-grid {
+    border: 1px solid #d0d0d0;
+}
+
+.content-grid-header .item-header-check, .content-grid-header .item-header {
+    border-bottom: 1px solid #d0d0d0;
+    border-right: 1px solid #d0d0d0;
+}
+
+.content-grid-header .item-header-check {
+    border-left: 1px solid #d0d0d0;
+}
+
+.content-grid .title-col-header {
+    font-weight: 600;
+    text-align: center;
+    padding: 7px;
+}
+
+.content-grid .content-grid-header {
+    display: grid;
+    grid-template-columns: 40px 150px 150px 250px 150px calc(100% - 1040px) 300px;
+    height: 100%;
+}
+
+    .content-grid .content-grid-header.hasScroll {
+        grid-template-columns: 40px 150px 150px 250px 150px calc(100% - 1057px) 300px;
+    }
+
+.table-detail .table-detail-header.hasScroll {
+    grid-template-columns: calc(100% - 417px) 200px 200px;
+}
+
+.content-grid .content-grid-header .item-header {
+    display: grid;
+    grid-template-rows: auto 34px;
+    width: 100%;
+}
+
+.row-grid-main {
+    display: grid;
+    grid-template-columns: 40px 150px 150px 250px 150px calc(100% - 1040px) 300px;
+    height: 32px;
+}
+
+    .row-grid-main .item-cell-check, .row-grid-main .item-cell {
+        border-bottom: 1px solid #d0d0d0;
+        border-right: 1px solid #d0d0d0;
+    }
+
+        .row-grid-main .item-cell:last-child {
+            border-right: none;
+        }
+
+    .row-grid-main .item-cell {
+        padding: 6px 8px;
+    }
+
+div[fieldData="text"] {
+    text-align: left;
+    padding: 6px 8px;
+}
+
+[fieldData="money"] {
+    padding: 6px 8px;
+    text-align: right;
+}
+
+    div[fieldData="date"] {
+        padding: 6px 8px;
+        text-align: center;
+    }
+
+[fieldData="code"] a:hover {
+    color: #007bff;
+}
+
+.item-header .filter-header-compare {
+    display: grid;
+    grid-template-columns: 35px auto;
+    height: 32px;
+}
+
+.item-header .filter-header {
+    margin: 1px;
+}
+/*css cho grid chi tiết*/
+/*css cho bảng chi tiết*/
+.item-grid-detail.table-detail {
+    display: grid;
+    grid-template-rows: 32px calc(100% - 64px) 32px;
+    height: 100%;
+    border: 1px solid #d0d0d0;
+}
+
+.item-table-detail.table-detail-header, .item-table-detail.table-detail-footer {
+    display: grid;
+    grid-template-columns: calc(100% - 400px) 200px 200px;
+    height: 100%;
+    background-color: #e5e6eb;
+}
+
+.row-grid-detail {
+    display: grid;
+    grid-template-columns: calc(100% - 400px) 200px 200px;
+    height: 32px;
+}
+
+.table-detail-header .col-table-detail {
+    font-weight: 600;
+    text-align: center;
+    padding: 6px;
+}
+
+.table-detail-header {
+    border-top: 1px solid #d0d0d0;
+    border-left: 1px solid #d0d0d0;
+}
+
+    .table-detail-header .col-table-detail:first-child {
+        border-left: none;
+    }
+
+    .row-grid-detail .col-table-detail, .table-detail-header .col-table-detail {
+        border-bottom: 1px solid #d0d0d0;
+        border-right: 1px solid #d0d0d0;
+    }
+
+        .row-grid-detail .col-table-detail:first-child {
+            border-left: 1px solid #d0d0d0;
+        }
+
+.table-detail-footer {
+    border: 1px solid #d0d0d0;
+}
+
+    .table-detail-footer .col-table-detail {
+        border-right: 1px solid #d0d0d0;
+    }
+
+        .table-detail-footer .col-table-detail:last-child {
+            border-right: none;
+        }
+/*cột check đầu bảng*/
+.item-header-check, .item-cell-check {
+    background: url('/Content/icons/uncheck.png') no-repeat center;
+}
+
+    .item-header-check.checked, .item-cell-check.checked {
+        background: url('../../Content/icons/check.png') no-repeat center;
+    }
+
+.row-grid-main.selected {
+    background-color: #c3ecff;
+}
+
+.row-grid-detail.selected {
+    background-color: #c3ecff;
+}
+
+.item-table-detail.table-detail-body .wrap-table-detail-body {
+    overflow: auto;
+    height: 100%;
+}
+[fieldName]{
+    cursor: default;
+}

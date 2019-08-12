@@ -35,6 +35,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -44,7 +45,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dictionary\BaseEntity.cs" />
+    <Compile Include="Dictionary\ObjectDetail.cs" />
+    <Compile Include="Dictionary\Receipt.cs" />
+    <Compile Include="Dictionary\ReceiptDetail.cs" />
+    <Compile Include="Dictionary\Staff.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\AjaxResult.cs" />
+    <Compile Include="ViewModels\ReceiptViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MISA.Common\MISA.Common.csproj">
@@ -54,8 +62,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Common\" />
-    <Folder Include="Dictionary\" />
-    <Folder Include="ViewModels\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

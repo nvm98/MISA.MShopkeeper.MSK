@@ -1,4 +1,8 @@
 ﻿/*phần thanh phân trang*/
+@font-face {
+    font-family: 'fontawesome-webfont';
+    src: url('/Content/fonts/fontawesome-webfont.woff2') format('woff2');
+}
 .content-grid-paging{
     padding: 14px 8px;
     border-bottom: 1px solid #d0d0d0;
@@ -25,19 +29,19 @@
         margin: 0 4px;
     }
     .content-grid-paging .icon-backward {
-        background-position: -648px -123px;
+        background-position: -649px -124px;
     }
     .content-grid-paging .icon-prev {
-        background-position: -699px -123px;
+        background-position: -700px -124px;
     }
     .content-grid-paging .icon-next {
-        background-position: -748px -123px;
+        background-position: -749px -124px;
     }
     .content-grid-paging .icon-forward {
-        background-position: -797px -123px;
+        background-position: -798px -124px;
     }
     .content-grid-paging .icon-refresh {
-        background-position: -848px -123px;
+        background-position: -849px -124px;
     }
     .content-grid-paging input{
         height: 22px;
@@ -64,7 +68,7 @@
     /*Phần bảng chi tiết*/
 .content-grid-detail{
     display: grid;
-    grid-template-rows:38px auto;
+    grid-template-rows:38px calc(100% - 38px);
     grid-row-gap: 4px;
 }
     .content-grid-detail .detail-text {
@@ -79,4 +83,3 @@
     .content-grid-detail .label-detail {
         background-color: #f6f6f6;
     }
-.dialog-main .

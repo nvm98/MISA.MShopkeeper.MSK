@@ -26,8 +26,8 @@ namespace MISA.DL.Base
         public DataAccess()
         {
             //Chuổi kết nối database
-            connectionString = @"Data Source=DATABASE\SQL2014;Initial Catalog=MISAMshopkeeper.NVANMANH_Development;Integrated Security=True;Persist Security Info=False;Pooling=False;MultipleActiveResultSets=False;Encrypt=False;TrustServerCertificate=True";
-            //connectionString = @"Data Source=DESKTOP-O4AU6I3;Initial Catalog=MISAMShopkeeper.NVANMANH_Development;Integrated Security=True;Persist Security Info=False;Pooling=False;MultipleActiveResultSets=False;Encrypt=False;TrustServerCertificate=True";
+            connectionString = @"Data Source=DATABASE\SQL2014;Initial Catalog=MISAMshopkeeper.NVMANH2_Development;Integrated Security=True;Persist Security Info=False;Pooling=False;MultipleActiveResultSets=False;Encrypt=False;TrustServerCertificate=True";
+            //connectionString = @"Data Source=DESKTOP-O4AU6I3;Initial Catalog=MISAMShopkeeper.NVMANH2_Development;Integrated Security=True;Persist Security Info=False;Pooling=False;MultipleActiveResultSets=False;Encrypt=False;TrustServerCertificate=True";
             // Khởi tạo đối tượng SqlConnection để kết nối tới Database:
             sqlConnection = new SqlConnection(connectionString);
 

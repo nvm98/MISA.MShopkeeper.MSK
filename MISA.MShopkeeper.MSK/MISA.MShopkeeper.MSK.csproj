@@ -85,6 +85,7 @@
     <Content Include="Content\icons\cancel-blue.png" />
     <Content Include="Content\icons\check.png" />
     <Content Include="Content\icons\common-icon.png" />
+    <Content Include="Content\icons\date-picker-icon.png" />
     <Content Include="Content\icons\exclamation.png" />
     <Content Include="Content\icons\icon-change-password16.png" />
     <Content Include="Content\icons\icon-feedback.png" />
@@ -92,11 +93,14 @@
     <Content Include="Content\icons\icon-popup.png" />
     <Content Include="Content\icons\icon_5shop_white_24_1.png" />
     <Content Include="Content\icons\icon_help_18.png" />
+    <Content Include="Content\icons\ic_api_20.svg" />
     <Content Include="Content\icons\ic_ocm_logo.png" />
     <Content Include="Content\icons\ic_sogiaohang.png" />
     <Content Include="Content\icons\loading.gif" />
     <Content Include="Content\icons\logo-mshopkeeper.png" />
+    <Content Include="Content\icons\Logo_meInvoice.svg" />
     <Content Include="Content\icons\Maximize.png" />
+    <Content Include="Content\icons\misasupport_1.png" />
     <Content Include="Content\icons\not-save.png" />
     <Content Include="Content\icons\notify-18.png" />
     <Content Include="Content\icons\quick-add.png" />
@@ -104,7 +108,9 @@
     <Content Include="Content\icons\save-white.png" />
     <Content Include="Content\icons\Search-blue.png" />
     <Content Include="Content\icons\slibarmenu.png" />
+    <Content Include="Content\icons\sms_menu.svg" />
     <Content Include="Content\icons\uncheck.png" />
+    <Content Include="CSS\common\dateTimePicker.css" />
     <Content Include="CSS\common\header.css" />
     <Content Include="CSS\common\layout.css" />
     <Content Include="CSS\common\menu.css" />
@@ -114,9 +120,11 @@
     <Content Include="CSS\lib\datepicker.css" />
     <Content Include="CSS\lib\jquery-ui.min.css" />
     <Content Include="CSS\view\dialog.css" />
+    <Content Include="CSS\view\gird.css" />
     <Content Include="CSS\view\main.css" />
     <Content Include="Global.asax" />
     <Content Include="Script\common\button.js" />
+    <Content Include="Script\common\common.js" />
     <Content Include="Script\common\resource.js" />
     <Content Include="Script\lib\bootstrap.min.js" />
     <Content Include="Script\lib\fd2dcc6d62.js" />
@@ -132,10 +140,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\ObjectDetailController.cs" />
+    <Compile Include="Controllers\ReceiptController.cs" />
+    <Compile Include="Controllers\ReceiptDetailController.cs" />
+    <Compile Include="Controllers\ReceiptViewController.cs" />
+    <Compile Include="Controllers\StaffController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\fonts\Roboto-Black.ttf" />
@@ -150,6 +168,7 @@
     <Content Include="Content\fonts\Roboto-Regular.ttf" />
     <Content Include="Content\fonts\Roboto-Thin.ttf" />
     <Content Include="Content\fonts\Roboto-ThinItalic.ttf" />
+    <Content Include="Content\fonts\fontawesome-webfont.woff2" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -161,7 +180,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Content\imgs\" />
-    <Folder Include="Controllers\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
@@ -181,6 +199,12 @@
       <Project>{effb9bed-cb6c-4e58-a8b9-459890c46ab2}</Project>
       <Name>MISA.Entities</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

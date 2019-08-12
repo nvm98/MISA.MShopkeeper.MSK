@@ -25,9 +25,12 @@
         width: 1px;
         border-right:1px solid #1882ae;
     }
-.content-toolbar span{
-    float: left;
-}
+    .content-toolbar .item-toolbar:first-child{
+        position: relative;
+    }
+    .content-toolbar span {
+        float: left;
+    }
     .content-toolbar .icon-add {
         background-position: -150px -203px;
     }
@@ -45,4 +48,27 @@
     }
     .content-toolbar .icon-refresh {
         background-position: -876px -127px;
+    }
+.dropdown-header-pay label {
+    display: block;
+    height: 32px;
+    width: 120px;
+    color: #000;
+    text-align: center;
+    padding: 8px;
+}
+.dropdown-header-pay{
+    background-color:#fff;
+    z-index: 100;
+    position:absolute;
+    border: 1px solid #d0d0d0;
+    border-radius: 3px;
+    display: none;
+}
+.dropdown-header-pay label:hover{
+    background-color:#026b97;
+    color:#fff;
+}
+    .dropdown-header-pay label{
+        margin:0;
     }

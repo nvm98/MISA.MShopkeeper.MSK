@@ -9,8 +9,10 @@
     <link href="/CSS/lib/datepicker.css" rel="stylesheet" />
     <link href="/CSS/lib/jquery-ui.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link href="../CSS/common/dateTimePicker.css" rel="stylesheet" />
     <link href="/CSS/common/layout.css" rel="stylesheet" />
     <link href="/CSS/common/header.css" rel="stylesheet" />
+    <link href="/CSS/view/gird.css" rel="stylesheet" />
     <link href="/CSS/common/menu.css" rel="stylesheet" />
     <link href="/CSS/common/toolbar.css" rel="stylesheet" />
     <link href="/CSS/common/panel.css" rel="stylesheet" />
@@ -22,142 +24,213 @@
     <div class="body-container">
         <div class="item mshopkeeper-logo"></div>
         <div class="item mshopkeeper-header">
-            <div class="item-mshopkeeper-header header-left">
-                <div>Nhập kho</div>
-                <a href="#">
-                    <span class="icon-help"></span>
-                    <span>Trợ giúp</span>
-                </a>
+            <div class="item-mshopkeeper-header-left header-left">
+                <div>Thu, chi tiền mặt</div>
             </div>
-            <div class="item-mshopkeeper-header header-right">
+            <div class="item-mshopkeeper-header-right header-right">
+                <div class="item-mshopkeeper-header logo logo-help">
+
+                </div>
+                <div class="item-mshopkeeper-header logo logo-notify">
+
+                </div>
+                <div class="item-mshopkeeper-header logo logo-support">
+
+                </div>
                 <div class="item-mshopkeeper-header">
                     <span class="icon icon-logo"></span>
-                    <span class="text-header">Nguyễn Văn Mạnh</span>
+                    <span class="text-header">admin</span>
                     <span class="icon icon-down"></span>
                 </div>
                 <div class="item-mshopkeeper-header">
-                    <span class="text-header">Tất cả các chi nhánh</span>
-                    <span class="icon icon-down"></span>
+                    <div class="wrap-select">
+                        <span class="text-header">Tất cả các chi nhánh</span>
+                        <span class="icon icon-down"></span>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="item mshopkeeper-menu">
-            <div class="menu-top">
-                <div class="wrap-menu-top">
-                    <a href="#" class="menu-item">
-                        <span class="menu-icon menu-general"></span>
-                        <span class="link-text">Tổng quan</span>
-                    </a>
-                    <a href="#" class="menu-item">
-                        <span class="menu-icon menu-buy"></span>
-                        <span class="link-text">Mua hàng</span>
-                    </a>
-                    <a href="#" class="menu-item">
-                        <span class="menu-icon menu-warehouse"></span>
-                        <span class="link-text">Kho</span>
-                    </a>
-                    <a href="#" class="menu-item" id="menu-fund">
-                        <span class="menu-icon menu-refund"></span>
-                        <span class="link-text">Quỹ tiền</span>
-                    </a>
-                    <a href="#" class="menu-item">
-                        <span class="menu-icon menu-cost"></span>
-                        <span class="link-text">Chi phí</span>
-                    </a>
-                    <a href="#" class="menu-item">
-                        <span class="menu-icon menu-promotion"></span>
-                        <span class="link-text">Khuyến mại</span>
-                    </a>
-                    <a href="#" class="menu-item">
-                        <span class="menu-icon menu-category"></span>
-                        <span class="link-text">Danh mục</span>
-                    </a>
-                    <a href="#" class="menu-item">
-                        <span class="menu-icon menu-report"></span>
-                        <span class="link-text">Báo cáo</span>
-                    </a>
-                    <a href="#" class="menu-item">
-                        <span class="menu-icon menu-setting"></span>
-                        <span class="link-text">Thiết lập</span>
-                    </a>
-                </div>
-            </div>
-            <div class="menu-bottom">
-                <a href="#" class="menu-item" style="margin:0">
-                    <span class="menu-icon menu-product"></span>
-                    <span class="link-text">Hàng hóa</span>
-                </a>
-            </div>
+            <a href="#" class="menu-item">
+                <span class="menu-icon menu-general"></span>
+                <span class="link-text">Tổng quan</span>
+            </a>
+            <a href="#" class="menu-item">
+                <span class="menu-icon menu-report"></span>
+                <span class="link-text">Báo cáo</span>
+            </a>
+            <a href="#" class="menu-item">
+                <span class="menu-icon menu-note"></span>
+                <span class="link-text">Sổ giao hàng</span>
+            </a>
+            <a href="#" class="menu-item">
+                <span class="menu-icon menu-buy"></span>
+                <span class="link-text">Mua hàng</span>
+            </a>
+            <a href="#" class="menu-item">
+                <span class="menu-icon menu-warehouse"></span>
+                <span class="link-text">Kho</span>
+            </a>
+            <a href="#" class="menu-item" id="menu-fund">
+                <span class="menu-icon menu-refund"></span>
+                <span class="link-text">Quỹ tiền</span>
+            </a>
+            <a href="#" class="menu-item">
+                <span class="menu-icon menu-cost"></span>
+                <span class="link-text">Chi phí</span>
+            </a>
+            <a href="#" class="menu-item">
+                <span class="menu-icon menu-promotion"></span>
+                <span class="link-text">Khuyến mại</span>
+            </a>
+            <a href="#" class="menu-item">
+                <span class="menu-icon menu-sms"></span>
+                <span class="link-text">SMS Marketing</span>
+            </a>
+            <a href="#" class="menu-item">
+                <span class="menu-icon menu-category"></span>
+                <span class="link-text">Danh mục</span>
+            </a>
+            <a href="#" class="menu-item">
+                <span class="menu-icon menu-bill"></span>
+                <span class="link-text">Hóa đơn điện tử</span>
+            </a>
+            <a href="#" class="menu-item">
+                <span class="menu-icon menu-setting"></span>
+                <span class="link-text">Thiết lập</span>
+            </a>
+            <a href="#" class="menu-item">
+                <span class="menu-icon menu-help"></span>
+                <span class="link-text">Trợ giúp</span>
+            </a>
+            <a href="#" class="menu-item">
+                <span class="menu-icon menu-phone"></span>
+                <span class="link-text">Thuê bao</span>
+            </a>
+            <a href="#" class="menu-item">
+                <span class="menu-icon menu-ocm"></span>
+                <span class="link-text">OCM</span>
+            </a>
+            <a href="#" class="menu-item">
+                <span class="menu-icon menu-5shop"></span>
+                <span class="link-text">5Shop</span>
+            </a>
+            <a href="#" class="menu-item">
+                <span class="menu-icon menu-api"></span>
+                <span class="link-text">API</span>
+            </a>
         </div>
         <div class="item mshopkeeper-main">
             <div class="item mshopkeeper-content">
                 <div class="item-mshopkeeper-content content-toolbar">
-                    <a href="#" class="item-toolbar item-add">
-                        <span class="icon-toolbar icon-add"></span>
-                        <span>Thêm mới</span>
-                        <i class="fas fa-sort-down" style="margin-left: 8px;"></i>
+                    <a href="#" class="item-toolbar arrow-down">
+                        <label class="item-add">
+                            <span class="icon-toolbar icon-add"></span>
+                            <span class="text-toolbar">Thêm mới</span>
+                            <i class="fas fa-sort-down" style="margin-left: 8px;"></i>
+                        </label>
+                        <div class="dropdown-header-pay combobox-item">
+                            <label class="text-dropdown add-collect">Phiếu thu tiền</label>
+                            <label class="text-dropdown">Phiếu chi tiền</label>
+                        </div>
                     </a>
                     <div class="seperate"></div>
                     <a href="#" class="item-toolbar item-duplicate">
                         <span class="icon-toolbar icon-duplicate"></span>
-                        <span>Nhân bản</span>
+                        <span class="text-toolbar">Nhân bản</span>
                     </a>
                     <div class="seperate"></div>
                     <a href="#" class="item-toolbar item-view">
                         <span class="icon-toolbar icon-view"></span>
-                        <span>Xem</span>
+                        <span class="text-toolbar">Xem</span>
                     </a>
                     <div class="seperate"></div>
                     <a href="#" class="item-toolbar item-edit">
                         <span class="icon-toolbar icon-edit"></span>
-                        <span>Sửa</span>
+                        <span class="text-toolbar">Sửa</span>
                     </a>
                     <div class="seperate"></div>
                     <a href="#" class="item-toolbar item-delete">
                         <span class="icon-toolbar icon-delete"></span>
-                        <span>Xóa</span>
+                        <span class="text-toolbar">Xóa</span>
                     </a>
                     <div class="seperate"></div>
                     <a href="#" class="item-toolbar item-refresh">
                         <span class="icon-toolbar icon-refresh"></span>
-                        <span>Nạp</span>
-                    </a>
-                </div>
-                <div class="item-mshopkeeper-content content-panel">
-                    <div class="item-content-panel select-range-time">
-                        <input type="text" name="name" value="" />
-                        <span class="icon icon-down"></span>
-                    </div>
-                    <div class="item-content-panel select-date">
-                        <div class="select-start-date">
-                            <span class="panel-text">Từ ngày</span>
-                            <div>
-                                <input type="text" name="name" value="" class="panel-start-date" />
-                                <span class="icon icon-calender"></span>
-                            </div>
-                        </div>
-                        <div class="select-end-date">
-                            <span class="panel-text">Đến ngày</span>
-                            <div>
-                                <input type="text" name="name" value="" class="panel-end-date" />
-                                <span class="icon icon-calender"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <a href="#" class="item-content-panel btn-filter">
-                        <span class="icon-filter"></span>
-                        <span class="panel-text">Lấy dữ liệu</span>
+                        <span class="text-toolbar">Nạp</span>
                     </a>
                 </div>
                 <div class="item-mshopkeeper-content content-grid">
                     <div class="item-content-grid content-grid-header">
-
+                        <div class="item-header-check"></div>
+                        <div class="item-header">
+                            <div class="title-col-header">Ngày</div>
+                            <div class="filter-header filter-header-compare">
+                                <div class="icon-compare">*</div>
+                                <div class="input-filter">
+                                    <input type="text" name="name" value="" fieldSelect="Date" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-header">
+                            <div class="title-col-header">Số chứng từ</div>
+                            <div class="filter-header filter-header-compare">
+                                <div class="icon-compare">*</div>
+                                <div class="input-filter">
+                                    <input type="text" name="name" value="" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-header">
+                            <div class="title-col-header">Loại chứng từ</div>
+                            <div class="filter-header">
+                                <div class="input-filter-type">
+                                    <input type="text" name="name" value="Tất cả" class="select-type" />
+                                    <span class="arrow-down"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-header">
+                            <div class="title-col-header">Tổng tiền</div>
+                            <div class="filter-header filter-header-compare">
+                                <div class="icon-compare">*</div>
+                                <div class="input-filter">
+                                    <input type="text" name="name" value="" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-header">
+                            <div class="title-col-header">Đối tượng nộp/nhận</div>
+                            <div class="filter-header filter-header-compare">
+                                <div class="icon-compare">*</div>
+                                <div class="input-filter">
+                                    <input type="text" name="name" value="" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-header">
+                            <div class="title-col-header">Lý do</div>
+                            <div class="filter-header filter-header-compare">
+                                <div class="icon-compare">*</div>
+                                <div class="input-filter">
+                                    <input type="text" name="name" value="" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-grid-main-clone" style="display: none">
+                        <div class="row-grid-main">
+                            <div class="item-cell-check"></div>
+                            <div class="item-cell" fieldName="ReceiptDate" fieldData="date"></div>
+                            <div class="item-cell" fieldName="ReceiptCode" fieldData="code"><a href="#"></a></div>
+                            <div class="item-cell" fieldName="ReceiptType" fieldData="text"></div>
+                            <div class="item-cell" fieldName="ReceiptMoney" fieldData="money"></div>
+                            <div class="item-cell" fieldName="ReceiptPerson" fieldData="text"></div>
+                            <div class="item-cell" fieldName="ReceiptReason" fieldData="text"></div>
+                        </div>
                     </div>
                     <div class="item-content-grid content-grid-body">
-
-                    </div>
-                    <div class="item-content-grid content-grid-footer">
-
+                        <div class="wrap-content-grid-body" style="overflow:auto; height: 100%; width: 100%"></div>
                     </div>
                     <div class="item-content-grid content-grid-paging">
                         <a href="#" class="icon-paging paging-left icon-backward"></a>
@@ -182,13 +255,34 @@
                         <div class="detail-text">Chi tiết</div>
                     </div>
                     <div class="item-grid-detail table-detail">
+                        <div class="item-table-detail table-detail-header">
+                            <div class="col-table-detail">Diễn giải</div>
+                            <div class="col-table-detail">Số tiền</div>
+                            <div class="col-table-detail">Mục thu chi</div>
+                        </div>
+                        <div class="row-grid-detail-clone" style="display: none">
+                            <div class="row-grid-detail">
+                                <div class="col-table-detail" fieldName="Reason" fieldData="text"></div>
+                                <div class="col-table-detail" fieldName="ReceiptDetailMoney" fieldData="money"></div>
+                                <div class="col-table-detail" fieldName="Type" fieldData="text"></div>
+                            </div>
+                        </div>
+                        <div class="item-table-detail table-detail-body">
+                            <div class="wrap-table-detail-body">
 
+                            </div>
+                        </div>
+                        <div class="item-table-detail table-detail-footer">
+                            <div class="col-table-detail"></div>
+                            <div class="col-table-detail"></div>
+                            <div class="col-table-detail"></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div id="dialog-main" class="dialog-main" title="Thêm phiếu thu">
+    <div id="dialog-main" class="dialog-main" title="Thêm phiếu thu" style="display:none">
         <div class="content-dialog-main">
             <div class="item-content-dialog header-dialog">
                 <a href="#" class="item-prev">
@@ -239,11 +333,138 @@
                 </a>
             </div>
             <div class="item-content-dialog body-dialog">
+                <div class="item-body-dialog form-information">
+                    <div class="item-form-information form-information-left">
+                        <div class="label-info">THÔNG TIN CHUNG</div>
+                        <div class="form-input">
+                            <div class="item-form-input item-person object-detail">
+                                <div class="label-item">Đối tượng nộp</div>
+                                <div class="info-code">
+                                    <div class="start-tab" tabindex="1"></div>
+                                    <input type="text" name="name" value="" id="auto-object" field="Code" autofocus tabindex="1" showView="ObjectCode"/>
+                                    <span class="arrow-down"></span>
+                                </div>
+                                <div class="info">
+                                    <input type="text" name="name" value="" field="Name" tabindex="2" showView="ObjectName"/>
+                                </div>
+                            </div>
+                            <div class="item-form-input item-info">
+                                <div class="label-item">Người nộp</div>
+                                <div class="info">
+                                    <input type="text" name="name" value="" tabindex="3" showView="ReceiptPerson"/>
+                                </div>
+                            </div>
+                            <div class="item-form-input item-info">
+                                <div class="label-item">Địa chỉ</div>
+                                <div class="info">
+                                    <input type="text" name="name" value="" tabindex="4" showView="Address"/>
+                                </div>
+                            </div>
+                            <div class="item-form-input item-info">
+                                <div class="label-item">Lý do thu</div>
+                                <div class="info">
+                                    <input type="text" name="name" value="" tabindex="5" showView="ReceiptReason"/>
+                                </div>
+                            </div>
+                            <div class="item-form-input item-person">
+                                <div class="label-item">Nhân viên thu</div>
+                                <div class="info-code">
+                                    <input type="text" name="name" value="" tabindex="6" showView="StaffCode"/>
+                                    <span class="arrow-down"></span>
+                                </div>
+                                <div class="info">
+                                    <input type="text" name="name" value="" tabindex="-1" disabled showView="StaffName"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-form-information form-information-right">
+                        <div class="label-info">CHỨNG TỪ</div>
+                        <div class="form-right">
+                            <div class="item-form-right">
+                                <div class="label-item">Số phiếu thu</div>
+                                <div class="input-form-right">
+                                    <input type="text" name="name" value="" tabindex="7" showView="ReceiptCode"/>
+                                </div>
+                            </div>
+                            <div class="item-form-right">
+                                <div class="label-item">Ngày thu</div>
+                                <div class="input-form-right">
+                                    <input type="text" name="name" value="" fieldSelect="Date" tabindex="8" field="ReceiptDate" showView="ReceiptDate" fieldData="date"/>
+                                </div>
+                            </div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-body-dialog dialog-table-detail">
+                    <div class="label-info">CHI TIẾT</div>
+                    <div class="dialog-grid-content">
+                        <div class="item-dialog-grid-content dialog-grid-header">
+                            <div class="col-dialog-grid">Diễn giải</div>
+                            <div class="col-dialog-grid">Số tiền</div>
+                            <div class="col-dialog-grid">Mục thu</div>
+                            <div class="col-dialog-grid"></div>
+                        </div>
+                        <div class="row-dialog-grid-clone" style="display: none">
+                            <div class="row-dialog-grid">
+                                <div class="col-dialog-grid">
+                                    <input type="text" name="name" value="" fieldName="Reason" fieldData="text" tabindex="9" />
+                                </div>
+                                <div class="col-dialog-grid">
+                                    <input type="text" name="name" value="" fieldName="ReceiptDetailMoney" fieldData="money" tabindex="9" />
+                                </div>
+                                <div class="col-dialog-grid">
+                                    <input type="text" name="name" value="" fieldName="Type" fieldData="text" tabindex="9" />
+                                </div>
+                                <div class="col-dialog-grid">
+                                    <button tabindex="9">
+                                        <span class="icon-delete"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-dialog-grid-content dialog-grid-body">
+                            <div class="wrap-dialog-grid-body">
 
+                            </div>
+                        </div>
+                        <div class="item-dialog-grid-content dialog-grid-footer">
+                            <div class="col-dialog-grid"></div>
+                            <div class="col-dialog-grid" id="total-money" fieldData="money">0</div>
+                            <div class="col-dialog-grid"></div>
+                            <div class="col-dialog-grid">
+                                <div class="end-tab" tabindex="9"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dialog-grid-content-view">
+                        <div class="item-dialog-grid-view grid-view-header">
+                            <div class="col-grid-view">Diễn giải</div>
+                            <div class="col-grid-view">Số tiền</div>
+                            <div class="col-grid-view">Mục thu</div>
+                        </div>
+                        <div class="row-grid-view-clone" style="display: none">
+                            <div class="row-grid-view">
+                                <div class="col-grid-view" fieldName="Reason" fieldData="text"></div>
+                                <div class="col-grid-view" fieldName="ReceiptDetailMoney" fieldData="money"></div>
+                                <div class="col-grid-view" fieldName="Type" fieldData="text"></div>
+                            </div>
+                        </div>
+                        <div class="item-dialog-grid-view grid-view-body">
+                            <div class="wrap-grid-view-body"></div>
+                        </div>
+                        <div class="item-dialog-grid-view grid-view-footer">
+                            <div class="col-grid-view"></div>
+                            <div class="col-grid-view" fielddata="money">0</div>
+                            <div class="col-grid-view"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <div id="dialog-warn">
+    <div id="dialog-warn" style="display:none">
         <div class="context-alert">
             <span class="icon-alert"></span>
             <span class="text-alert"></span>
@@ -254,6 +475,7 @@
     <script src="/Script/lib/popper.min.js"></script>
     <script src="/Script/lib/bootstrap.min.js"></script>
     <script src="/Script/lib/jquery.maskedinput.min.js"></script>
+    <script src="/Script/common/common.js"></script>
     <script src="/Script/common/resource.js"></script>
     <script src="/Script/common/button.js"></script>
     <script src="/Script/service.js"></script>

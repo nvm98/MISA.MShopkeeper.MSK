@@ -1,5 +1,9 @@
-D:\dev\MISA.MShopkeeper.MSK\MISA.Entities\bin\Debug\MISA.Entities.dll
-D:\dev\MISA.MShopkeeper.MSK\MISA.Entities\bin\Debug\MISA.Entities.pdb
-D:\dev\MISA.MShopkeeper.MSK\MISA.Entities\obj\Debug\MISA.Entities.csproj.CoreCompileInputs.cache
-D:\dev\MISA.MShopkeeper.MSK\MISA.Entities\obj\Debug\MISA.Entities.dll
-D:\dev\MISA.MShopkeeper.MSK\MISA.Entities\obj\Debug\MISA.Entities.pdb
+E:\Develop\MISA.MShopkeeper.MSK\MISA.MShopkeeper.MSK\MISA.Entities\bin\Debug\MISA.Entities.dll
+E:\Develop\MISA.MShopkeeper.MSK\MISA.MShopkeeper.MSK\MISA.Entities\bin\Debug\MISA.Entities.pdb
+E:\Develop\MISA.MShopkeeper.MSK\MISA.MShopkeeper.MSK\MISA.Entities\bin\Debug\MISA.Common.dll
+E:\Develop\MISA.MShopkeeper.MSK\MISA.MShopkeeper.MSK\MISA.Entities\bin\Debug\MISA.Common.pdb
+E:\Develop\MISA.MShopkeeper.MSK\MISA.MShopkeeper.MSK\MISA.Entities\obj\Debug\MISA.Entities.csprojAssemblyReference.cache
+E:\Develop\MISA.MShopkeeper.MSK\MISA.MShopkeeper.MSK\MISA.Entities\obj\Debug\MISA.Entities.csproj.CoreCompileInputs.cache
+E:\Develop\MISA.MShopkeeper.MSK\MISA.MShopkeeper.MSK\MISA.Entities\obj\Debug\MISA.Entities.csproj.CopyComplete
+E:\Develop\MISA.MShopkeeper.MSK\MISA.MShopkeeper.MSK\MISA.Entities\obj\Debug\MISA.Entities.dll
+E:\Develop\MISA.MShopkeeper.MSK\MISA.MShopkeeper.MSK\MISA.Entities\obj\Debug\MISA.Entities.pdb

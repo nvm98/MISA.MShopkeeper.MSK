@@ -1,6 +1,6 @@
-D:\dev\MISA.MShopkeeper.MSK\MISA.Common\bin\Debug\MISA.Common.dll
-D:\dev\MISA.MShopkeeper.MSK\MISA.Common\bin\Debug\MISA.Common.pdb
-D:\dev\MISA.MShopkeeper.MSK\MISA.Common\obj\Debug\MISA.Common.csprojResolveAssemblyReference.cache
-D:\dev\MISA.MShopkeeper.MSK\MISA.Common\obj\Debug\MISA.Common.csproj.CoreCompileInputs.cache
-D:\dev\MISA.MShopkeeper.MSK\MISA.Common\obj\Debug\MISA.Common.dll
-D:\dev\MISA.MShopkeeper.MSK\MISA.Common\obj\Debug\MISA.Common.pdb
+E:\Develop\MISA.MShopkeeper.MSK\MISA.MShopkeeper.MSK\MISA.Common\bin\Debug\MISA.Common.dll
+E:\Develop\MISA.MShopkeeper.MSK\MISA.MShopkeeper.MSK\MISA.Common\bin\Debug\MISA.Common.pdb
+E:\Develop\MISA.MShopkeeper.MSK\MISA.MShopkeeper.MSK\MISA.Common\obj\Debug\MISA.Common.csprojAssemblyReference.cache
+E:\Develop\MISA.MShopkeeper.MSK\MISA.MShopkeeper.MSK\MISA.Common\obj\Debug\MISA.Common.csproj.CoreCompileInputs.cache
+E:\Develop\MISA.MShopkeeper.MSK\MISA.MShopkeeper.MSK\MISA.Common\obj\Debug\MISA.Common.dll
+E:\Develop\MISA.MShopkeeper.MSK\MISA.MShopkeeper.MSK\MISA.Common\obj\Debug\MISA.Common.pdb

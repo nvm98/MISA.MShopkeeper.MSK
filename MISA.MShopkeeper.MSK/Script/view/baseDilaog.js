@@ -37,14 +37,14 @@
     }
     resizeDialog() {
         this.Form.dialog("option", "position", { my: "center center", at: "center center", of: window });
-        if (this.Form.dialog('option', 'height') === 700) {
+        if (this.Form.dialog('option', 'height') === 600) {
             this.Form.dialog({
                 height: $(window).height(),
                 width: $(window).width()
             });
         } else {
             this.Form.dialog({
-                height: 700,
+                height: 600,
                 width: 900
             });
         }

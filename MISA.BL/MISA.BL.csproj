@@ -45,6 +45,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Base\BaseBL.cs" />
+    <Compile Include="Dictionary\ObjectDetailBL.cs" />
+    <Compile Include="Dictionary\ReceiptBL.cs" />
+    <Compile Include="Dictionary\ReceiptDetailBL.cs" />
+    <Compile Include="Dictionary\ReceiptViewModelBL.cs" />
+    <Compile Include="Dictionary\StaffBL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -61,8 +66,6 @@
       <Name>MISA.Entities</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Dictionary\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

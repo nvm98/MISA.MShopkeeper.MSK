@@ -160,11 +160,11 @@
     width: 100%;
     height: 100%;
     display: grid;
-    grid-template-rows: 32px auto;
+    grid-template-rows: 32px calc(100% - 32px);
 }
 
     .content-dialog-main .body-dialog {
-        padding: 0 8px;
+        padding: 0 8px 8px 8px;
     }
 /*css cho thanh header trên dialog*/
 .header-dialog {
@@ -242,20 +242,272 @@
     .header-dialog .text-header {
         padding: 6px 8px;
     }
-    /*css cho dialog thêm*/
+/*css cho dialog thêm*/
 .add .item-prev, .add .item-next, .add .item-add, .add .item-edit, .add .item-delete, .add .item-stop, .add .item-print {
     opacity: 0.5;
     pointer-events: none;
 }
+
 .duplicate .item-prev, .duplicate .item-next, .duplicate .item-add, .duplicate .item-edit, .duplicate .item-delete, .duplicate .item-stop, .duplicate .item-print {
     opacity: 0.5;
     pointer-events: none;
 }
+
 .view .item-stop, .view .item-save, .view .item-prev {
     opacity: 0.5;
     pointer-events: none;
 }
+.view input {
+    pointer-events: none;
+    background-color: rgb(229, 230, 235);
+}
+.view .form-information-left .form-input .item-person .info-code input, .view .form-right .input-form-right input {
+    width: 100%;
+}
+.view .arrow-down, .view button.ui-datepicker-trigger {
+    display: none !important;
+}
+.view .dialog-grid-content{
+    display:none!important;
+}
 .edit .item-prev, .edit .item-next, .edit .item-add, .edit .item-edit, .edit .item-delete, .edit .item-print {
     opacity: 0.5;
     pointer-events: none;
+}
+.edit .dialog-grid-content-view, .add .dialog-grid-content-view, .duplicate .dialog-grid-content-view{
+    display: none!important;
+}
+/*bảng chi tiết trên dialog view*/
+.dialog-grid-content-view{
+    display:grid;
+    grid-template-rows: 32px calc(100% - 64px) 32px;
+    height:100%;
+}
+.grid-view-header, .grid-view-footer, .row-grid-view{
+    display: grid;
+    grid-template-columns: calc(100% - 450px) 200px 250px;
+    height: 32px;
+}
+    .grid-view-header.hasScroll, .grid-view-footer.hasScroll {
+        grid-template-columns: calc(100% - 467px) 200px 250px;
+    }
+    .grid-view-header, .grid-view-footer {
+        background-color: #e5e6eb;
+    }
+.grid-view-header .col-grid-view{
+    font-weight: 600;
+    text-align: center;
+    padding: 6px 8px;
+}
+.dialog-grid-content-view{
+    border: 1px solid #d0d0d0;
+}
+    .dialog-grid-content-view .col-grid-view{
+        border-bottom: 1px solid #d0d0d0;
+        border-right: 1px solid #d0d0d0;
+    }
+    /*Phần nội dung dialog*/
+    .item-content-dialog.body-dialog {
+        display: grid;
+        grid-template-rows: 253px calc(100% - 253px);
+        height: 100%;
+    }
+
+.item-body-dialog.form-information {
+    display: grid;
+    grid-template-columns: auto 240px;
+    height: 100%;
+}
+
+.form-information-left, .form-information-right {
+    padding: 8px 8px 4px;
+}
+
+.form-information-left {
+    display: grid;
+    grid-template-rows: 26px auto;
+    height: 100%;
+}
+
+    .form-information-left .label-info, .form-information-right .label-info, .dialog-table-detail .label-info{
+        font-weight: 600;
+        text-align: left;
+        font-size: 15px;
+        padding: 4px 8px;
+    }
+
+    .form-information-left .form-input {
+        display: grid;
+        grid-template-rows: repeat(5, 20%);
+        height: 100%;
+    }
+
+        .form-information-left .form-input .item-form-input, .form-information-right .form-right .item-form-right {
+            margin: 5.5px 8px;
+            height: 32px;
+        }
+
+        .form-information-left .form-input .item-person {
+            display: grid;
+            grid-template-columns: 105px calc(35% - 36.75px) calc(65% - 68.25px);
+            height: 32px;
+        }
+
+        .form-information-left .form-input .item-info {
+            display: grid;
+            grid-template-columns: 105px auto;
+            height: 32px;
+            ;
+        }
+
+        .label-item {
+            padding: 6px 0;
+        }
+
+        .form-information-left .form-input .item-person .info-code .arrow-down {
+            display: block;
+            height: 30px;
+            width: 24px;
+            float: left;
+        }
+
+        .form-information-left .form-input .item-person .info-code input {
+            height: 30px;
+            width: calc(100% - 24px);
+            float: left;
+            outline: none;
+            border: none;
+        }
+
+        .form-information-left .form-input .item-info .info input {
+            height: 30px;
+            width: 100%;
+            outline: none;
+            border: none;
+        }
+input {
+    text-indent: 8px;
+}
+.item-person .info input {
+    height: 30px;
+    width: 100%;
+    outline: none;
+    border: none;
+}
+
+.item-person .info {
+    margin-left: 8px;
+}
+
+.item-person .info, .form-information-left .form-input .item-info .info, .form-information-left .form-input .item-person .info-code {
+    border: 1px solid #d0d0d0;
+    border-radius: 3px;
+}
+.item-form-information.form-information-right{
+    display: grid;
+    grid-template-rows: 26px auto;
+    height: 100%;
+}
+    .item-form-information.form-information-right .form-right {
+        display: grid;
+        grid-template-rows: 20% 20% auto;
+        height: 100%;
+    }
+    .item-form-information.form-information-right .form-right .item-form-right{
+        display: grid;
+        grid-template-columns: 90px auto;
+        height: 32px;
+    }
+.form-right .input-form-right input {
+    height: 30px;
+    width: calc(100% - 25px);
+    outline: none;
+    border: none;
+}
+.form-right .input-form-right {
+    border: 1px solid #d0d0d0;
+    border-radius: 3px;
+}
+.item-body-dialog.dialog-table-detail{
+    display: grid;
+    grid-template-rows: 26px calc(100% - 26px);
+    height: 100%;
+}
+    .item-body-dialog.dialog-table-detail .dialog-grid-content {
+        display: grid;
+        grid-template-rows: 32px calc(100% - 64px) 32px;
+        height: 100%;
+        border: 1px solid #d0d0d0;
+    }
+.item-dialog-grid-content.dialog-grid-header, .item-dialog-grid-content.dialog-grid-body .row-dialog-grid, .item-dialog-grid-content.dialog-grid-footer {
+    display: grid;
+    grid-template-columns: calc(100% - 410px) 200px 160px 50px;
+    height: 32px;
+}
+    .item-dialog-grid-content.dialog-grid-header.hasScroll {
+        grid-template-columns: calc(100% - 427px) 200px 160px 50px;
+    }
+    .item-dialog-grid-content.dialog-grid-header .col-dialog-grid {
+        text-align: center;
+        font-weight: 600;
+        padding: 6px 0;
+        border-right: 1px solid #d0d0d0;
+        border-bottom: 1px solid #d0d0d0;
+    }
+.item-dialog-grid-content.dialog-grid-header, .item-dialog-grid-content.dialog-grid-footer {
+    background-color: #e5e6eb;
+}
+.item-dialog-grid-content.dialog-grid-body .row-dialog-grid .col-dialog-grid {
+    border-right: 1px solid #d0d0d0;
+    border-bottom: 1px solid #d0d0d0;
+}
+    .item-dialog-grid-content.dialog-grid-footer .col-dialog-grid {
+        border-right: 1px solid #d0d0d0;
+        border-top: 1px solid #d0d0d0;
+    }
+
+.info-code .arrow-down {
+    background: url(../../Content/icons/arrow-down-line.png) no-repeat center;
+}
+.row-dialog-grid .col-dialog-grid input{
+    height: 31px;
+    width: 100%;
+}
+/*bảng chi tiết trên dialog*/
+.row-dialog-grid.choose-select {
+    background-color: #c3ecff;
+}
+.row-dialog-grid input{
+    border: none;
+    border-radius: 3px;
+}
+.row-dialog-grid input.not-choose{
+    background-color: #c3ecff;
+}
+.col-dialog-grid button {
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    border: none;
+}
+button .icon-delete {
+    margin: 0 7px;
+    display: block;
+    height: 100%;
+    width: 24px;
+    background: url('/Content/icons/common-icon.png') no-repeat 2px 5px;
+}
+    button .icon-delete:hover{
+        background-color:aqua;
+    }
+    .col-dialog-grid button.not-choose {
+        background-color: #c3ecff;
+    }
+.item-dialog-grid-content.dialog-grid-body .wrap-dialog-grid-body, .wrap-grid-view-body {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+#total-money{
+    font-weight: 600;
 }
